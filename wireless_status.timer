@@ -1,0 +1,9 @@
+[Unit]
+Description=wireless status check timer
+
+[Timer]
+OnBootSec=330s
+OnUnitActiveSec=14400s
+
+[Install]
+WantedBy=timers.target

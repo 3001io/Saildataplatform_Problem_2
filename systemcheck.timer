@@ -2,8 +2,8 @@
 Description=systemcheck timer
 
 [Timer]
-OnUnitActiveSec=14400s
 OnBootSec=300s
+OnUnitActiveSec=14400s
 
 [Install]
 WantedBy=timers.target

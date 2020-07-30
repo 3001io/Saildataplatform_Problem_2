@@ -2,7 +2,7 @@
 Description=systemcheck timer
 
 [Timer]
-OnBootSec=300s
+OnBootSec=180s
 OnUnitActiveSec=14400s
 
 [Install]

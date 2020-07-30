@@ -3,7 +3,7 @@ Description=Run systemcheck using systemcheck.timer five minutes after start and
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /var/saildrone/scripts/systemcheck.sh
+ExecStart=/var/saildrone/scripts/systemcheck.sh
 
 [Install]
 WantedBy=default.target

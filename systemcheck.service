@@ -1,8 +1,7 @@
 [Unit]
-Description=Run systemcheck using systemcheck.timer five minutes after start and then every four hours
+Description=Run systemcheck using systemcheck.timer three minutes after start and then every four hours
 
 [Service]
-Type=oneshot
 ExecStart=/var/saildrone/scripts/systemcheck.sh
 
 [Install]

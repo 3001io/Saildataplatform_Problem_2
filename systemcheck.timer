@@ -1,0 +1,9 @@
+[Unit]
+Description=systemcheck
+
+[Timer]
+OnUnitActiveSec=14400s
+OnBootSec=90s
+
+[Install]
+WantedBy=timers.target

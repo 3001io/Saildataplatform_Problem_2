@@ -1,0 +1,10 @@
+[Unit]
+Description=systemcheck job
+After=thelast.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /var/saildrone/scripts/systemcheck.sh
+
+[Install]
+WantedBy=default.target

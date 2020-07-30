@@ -1,5 +1,5 @@
 [Unit]
-Description=wireless status check timer
+Description=wifi status check timer
 
 [Timer]
 OnBootSec=330s

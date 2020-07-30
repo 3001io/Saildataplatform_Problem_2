@@ -1,5 +1,5 @@
 [Unit]
-Description=systemcheck job
+Description=Run systemcheck using systemcheck.timer five minutes after start and then every four hours
 
 [Service]
 Type=oneshot

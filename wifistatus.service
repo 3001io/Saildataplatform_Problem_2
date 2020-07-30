@@ -3,7 +3,7 @@ Description=Run wifistatus using wifistatus.timer five and a half minutes after 
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /var/saildrone/scripts/wifistatus.sh
+ExecStart=/var/saildrone/scripts/wifistatus.sh
 
 [Install]
 WantedBy=default.target

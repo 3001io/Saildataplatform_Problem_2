@@ -1,6 +1,5 @@
 [Unit]
 Description=systemcheck job
-After=thelast.service
 
 [Service]
 Type=oneshot

@@ -6,3 +6,4 @@ if [ -f "$FILE" ]; then
   else
     logger system.check file missing
 fi
+echo $(date "+%Y/%m/%d_%H:%M:%S") > /etc/saildrone/system.checked

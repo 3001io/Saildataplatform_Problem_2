@@ -1,11 +1,11 @@
 # Saildrone_Problem_2
 A proposed solution to creating system and wireless status logs.
 Instructions
-Install the two scripts wifistatus.sh and systemcheck.sh in /var/saildrone/scripts
-Install wifistatus.service and systemcheck.service in the /lib/systemd/system/
-Install wifistatus.timer and systemcheck.timer in /lib/systemd/system/timers.target.wants/
-Create symlink in /etc/systemd/system for each .service file
-Create symlink in /etc/systemd/system/timer.target.wants/ for each .timer file
+Install the two scripts wifistatus.sh and systemcheck.sh in a /var/saildrone/scripts/ directory
+Install wifistatus.service and systemcheck.service in the /etc/systemd/system/
+Install wifistatus.timer and systemcheck.timer in /etc/systemd/system/timers.target.wants/
+Please check ownership and permission of the scripts, which should have permission to be executed. 
+(ex chmod 775 *.sh)
 
 The "systemcheck" service sends a message to syslog, either "system.check file exists" or "system.check file missing"
 depending on whether the file /etc/saildrone/system.check exists.

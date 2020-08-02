@@ -5,7 +5,7 @@
 # ip -a link | grep -v link | awk '{print $2}' This will show a list of just the interface names
 # as they would appear in /proc/net/wireless. It could then create variables to add in the subroutine below.
 
-for i in $(grep 'wlan' /proc/net/wireless)
+for i in $(grep -o 'wlan' /proc/net/wireless)
 do
     # we could just do    wifistats=$(grep  wlan /proc/net/wireless) # but that's less fun
     # using this method, you can just gather the fields you want.

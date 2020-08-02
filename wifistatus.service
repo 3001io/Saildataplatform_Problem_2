@@ -2,6 +2,7 @@
 Description=Run wifistatus using wifistatus.timer five and a half minutes after start and then every four hours
 
 [Service]
+User=root
 ExecStart=/var/saildrone/scripts/wifistatus.sh
 
 [Install]

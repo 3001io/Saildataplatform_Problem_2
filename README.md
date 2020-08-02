@@ -5,7 +5,7 @@ Install the two scripts wifistatus.sh and systemcheck.sh in a /var/saildrone/scr
 Install wifistatus.service and systemcheck.service in the /etc/systemd/system/
 Install wifistatus.timer and systemcheck.timer in /etc/systemd/system/timers.target.wants/
 Please check ownership and permission of the scripts, which should have permission to be executed. 
-(ex chmod 775 *.sh)
+(example: chmod 775 /var/saildrone:scripts/*.sh)
 
 The "systemcheck" service sends a message to syslog, either "system.check file exists" or "system.check file missing"
 depending on whether the file /etc/saildrone/system.check exists.

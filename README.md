@@ -1,4 +1,4 @@
-# Saildrone_Problem_2
+# Sailing data acquistions platform_Problem_2
 A proposed solution to creating system and wireless status logs.
 Instructions
 Install the two scripts wifistatus.sh and systemcheck.sh in a /var/saildrone/scripts/ directory
